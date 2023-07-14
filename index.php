@@ -22,9 +22,6 @@
         p{
             color:hsl(285, 85%, 46%);
         }
-        i {
-            font-size: 2rem;
-        }
         
         
     </style>
@@ -43,11 +40,11 @@
                     <div class="campos-formulario-login">
                         <div class="d-flex gap-3">
                             <i class="bi bi-person"></i>
-                            <input type="text" class="form-control input-style" id="username" name="username" required>
+                            <input type="text" class="form-control input-style" id="username" name="username" placeholder="Login" required>
                         </div>
                         <div class="d-flex gap-3 ">
                             <i class="bi bi-key"></i>
-                            <input type="password" class="form-control input-style" id="password" name="password" required>
+                            <input type="password" class="form-control input-style" id="password" name="password" placeholder="Senha" required>
                         </div>
                         <div>
                             <button type="submit" class="btn btn-success">Entrar</button>
