@@ -1,13 +1,10 @@
 <?php
-// Verifica se o formulário foi enviado
+
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    // Verifica as credenciais (usuário e senha)
     $username = $_POST['username'];
     $password = $_POST['password'];
 
-    // Verifica as credenciais do usuário (exemplo simples)
     if ($username === 'admin' && $password === 'admin123') {
-        // Redireciona para a página de sucesso
         header('Location: principal.php');
         exit;
     } else {
@@ -19,7 +16,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Resultado do Login</title>
+    <title>Login falhou</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
