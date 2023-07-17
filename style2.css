@@ -88,8 +88,8 @@ section{
     text-decoration: none;
     color:white;
     background-color: var(--first-color);
-    border-radius: 20%;
-    padding: .5rem;
+    border-radius: 1rem;
+    padding: .5rem 2rem;
     box-shadow: 2px 2px 2px 1.5px rgba(0, 0, 0, 0.4);
 }
 .sub-titulo{
