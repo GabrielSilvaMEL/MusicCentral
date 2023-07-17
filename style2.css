@@ -1,0 +1,125 @@
+:root{
+    --first-color:hsl(285, 85%, 46%);
+}
+img{
+    max-width: 50vw;
+    border-radius: 1rem;
+}
+i{
+    font-size: 1.3rem;
+}
+section{
+    height:100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+}
+.header-data{
+    position: absolute;
+    top:2%
+}
+.header-data a{
+    font-weight: 600;
+    text-decoration: none;
+    color: black;
+}
+.header-data a:hover{
+    color: var(--first-color);
+}
+
+.home{
+    padding:1rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+}
+
+.home-data{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    gap:2rem;
+    padding: 2rem;
+}
+.wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+    margin: 2rem;
+}
+.my-container{
+    flex: 0 1 40vw;
+    margin: 5px;
+    box-shadow: 2px 2px 2px 1.5px rgba(0, 0, 0, 0.4);
+    border-radius: 1rem;
+    padding: .75rem;
+    text-align: center;
+}
+.my-container-first{
+    flex: 0 1 40vw;
+    margin: 5px;
+    box-shadow: 2px 2px 2px 1.5px rgba(0, 0, 0, 0.4);
+    border-radius: 1rem;
+    padding: .75rem;
+    text-align: center;
+    background-color: white;
+    color:black; padding: 3rem;
+}
+.first-class{
+    background-color:var(--first-color) ;
+    height: auto;
+}
+.first-class h1,h2{
+    color:white ;
+}
+.contato{
+    text-decoration:none;
+
+}
+.contato a{
+    font-size: 1.7rem;
+    text-decoration: none;
+    color:white;
+    background-color: var(--first-color);
+    border-radius: 20%;
+    padding: .5rem;
+    box-shadow: 2px 2px 2px 1.5px rgba(0, 0, 0, 0.4);
+}
+.sub-titulo{
+    color:lightgray
+}
+.global-button{
+    padding: 1rem;
+    background-color: var(--first-color);
+    color:white;
+    border-radius: .5rem;
+    text-decoration: none;
+    font-weight: 600;
+}
+@media(max-width:700px){
+    
+    .home-data{
+        flex-direction: column;
+    }
+    img{
+        max-width: 80vw;
+    }
+    .my-container-first{
+        flex: 0 1 60vw;
+    }
+}
+@media(max-width:500px){
+    
+    
+    .my-container-first{
+        flex: 0 1 80vw;
+       
+    }
+}
