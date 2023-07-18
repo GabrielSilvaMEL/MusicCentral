@@ -20,7 +20,8 @@ section{
 
 .header-data{
     position: absolute;
-    top:2%
+    top:2%;
+    
 }
 .header-data a{
     font-weight: 600;
@@ -164,12 +165,10 @@ section{
     color:white;
     background-color: var(--first-color);
     z-index: 10;
-}
-.button-top a{
     text-decoration: none;
-    color:white;
     font-size: 1.5rem;
 }
+
 
 @media(max-width:700px){
     
@@ -188,6 +187,7 @@ section{
     .first-class{
         height:auto;
     }
+    
 }
 @media(max-width:500px){
     

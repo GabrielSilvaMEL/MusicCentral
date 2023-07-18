@@ -32,20 +32,57 @@
         });
 
         $(document).ready(function () {
-                $(window).on("scroll", function () {
-                    var scrollPos = $(this).scrollTop();
+            $(window).on("scroll", function () {
+                var scrollPos = $(this).scrollTop();
 
-                    if (scrollPos > 0) {
-                        $(".button-top").fadeIn();
-                    } else {
-                        $(".button-top").fadeOut();
-                    }
-                });
-
-                $(".button-top").on("click", function () {
-                    $("html, body").animate({ scrollTop: 0 }, 800);
-                });
+                if (scrollPos > 0) {
+                    //Não está no topo
+                    $(".button-top").fadeIn();
+                    $(".header-data").css({
+                        "position": "fixed",
+                        "height": "4vh",
+                        "top": "0%",
+                        "left": "0%",
+                        "width": "100vw",
+                        "display": "flex",
+                        "justify-content": "center",
+                        "background-color": "hsl(285, 85%, 46%,0.95)",
+                        "font-size": "1rem",
+                        "align-items": "center",
+                        "z-index": "2"
+                    });
+                    $(".header-data a").css({
+                        "font-weight": "600",
+                        "text-decoration": "none",
+                        "color": "white"
+                    });
+                } else {
+                    // Está no topo
+                    $(".button-top").fadeOut();
+                    $(".header-data").css({
+                        "position":" absolute",
+                        "top": "2%",
+                        "height": "",
+                        "top": "",
+                        "left": "",
+                        "width": "",
+                        "display": "",
+                        "justify-content": "center",
+                        "background-color": "",
+                        "font-size": "1rem",
+                        "align-items": "center",
+                        "z-index": "2"
+                    });
+                    $(".header-data a").css({
+                        "font-weight": "600",
+                        "text-decoration": "none",
+                        "color": "black"
+                    });
+                }
             });
+
+
+        });
 
         window.addEventListener("DOMContentLoaded", function () {
             var homeText = document.querySelector(".home-text");
@@ -61,15 +98,12 @@
 
 
     </script>
-
-
-
 </head>
 
 <body>
-    <div class="button-top">
-        <a href="#home" class="fas fa-arrow-up"></a>
-    </div>
+    <!-- botao fixo go to top -->
+    <a href="#home" class="button-top fas fa-arrow-up"></a>
+
     <section id="home">
         <div class="header-data d-flex gap-3">
             <a href="#home">HOME</a>
@@ -93,9 +127,6 @@
 
     </section>
     <section class="first-class" id="about">
-
-
-
         <div class="home-data">
             <div class="d-flex flex-column justify-content-center align-items-center text-center first-class">
                 <h1>Sobre Nós</h1>
@@ -126,8 +157,6 @@
                 <img src="instrumentos.jpg" alt="">
             </div>
         </div>
-
-
 
     </section>
     <section class="imagem-secao" id="promo">
