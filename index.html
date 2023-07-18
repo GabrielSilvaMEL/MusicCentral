@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,11 +12,26 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
         integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
     <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            // Manipula o clique no botão
+            $("#toggleButton").click(function () {
+                $("#conteudo").fadeToggle(1000); // Duração da animação em milissegundos
+            });
+        });
+
+    </script>
+
+
+
 </head>
+
 <body>
 
-    <section>
-        <div class="header-data d-flex gap-4">
+    <section id="home">
+        <div class="header-data d-flex gap-3">
             <a href="#home">HOME</a>
             <a href="#about">SOBRE NÓS</a>
             <a href="#contato">CONTATO</a>
@@ -26,89 +42,111 @@
             <div class="home-image">
                 <img src="music.jpg" alt="">
             </div>
-            <div class="">
-                <h1>Olá</h1>
+            <div class="home-text">
+                <h1>Olá!</h1>
                 <h2>Somos a Music Center</h2>
                 <p>Lugar perfeito para encontrar seu próximo instrumento.</p>
-                <a href="" class="global-button">Saiba mais <i class="bi bi-arrow-right"></i></a>
+                <a href="#about" class="global-button">Saiba mais <i class="bi bi-arrow-right"></i></a>
             </div>
         </div>
 
     </section>
     <section class="first-class" id="about">
+
+        <div class="home-data">
         
-            <div class="d-flex flex-column justify-content-center align-items-center text-center first-class">
-                <h1>Sobre Nós</h1>
-                <h2 class="sub-titulo">Estamos há 30 anos proporcionando o melhor dos instrumentos musicais.</h2>
-                <div class="wrapper">
-                    <div class="my-container-first">
-                        <i class="fas fa-guitar"></i>
-                        <h3>Violões</h3>
+            <div class="home-data">
+                <div class="d-flex flex-column justify-content-center align-items-center text-center first-class">
+                    <h1>Sobre Nós</h1>
+                    <h2 class="sub-titulo">Estamos há 30 anos proporcionando o melhor dos instrumentos musicais.</h2>
+                
+                    <div class="wrapper">
+                        <div class="my-container-first">
+                            <i class="fas fa-guitar"></i>
+                            <h3>Violões</h3>
+                        </div>
+                        <div class="my-container-first">
+                            <i class="fas fa-drum"></i>
+                            <h3>Baterias</h3>
+                        </div>
+                
+                        <div class="my-container-first">
+                            <i class="fas fa-guitar"></i>
+                            <h3>Guitarras</h3>
+                        </div>
+                
+                        <div class="my-container-first">
+                            <i class="fas fa-guitar"></i>
+                            <h3>Contra-Baixos</h3>
+                        </div>
                     </div>
                 
-                    <div class="my-container-first">
-                        <i class="fas fa-drum"></i>
-                        <h3>Baterias</h3>
-                    </div>
-                
-                    <div class="my-container-first">
-                        <i class="fas fa-guitar"></i>
-                        <h3>Guitarras</h3>
-                    </div>
-                    <div class="my-container-first">
-                        <i class="fas fa-guitar"></i>
-                        <h3>Ukuleles</h3>
-                    </div>
-                    <div class="my-container-first">
-                        <i class="fas fa-guitar"></i>
-                        <h3>Contra-Baixos</h3>
-                    </div>
                 </div>
-                
+                <div class="home-image">
+                    <img src="instrumentos.jpg" alt="">
+                </div>
             </div>
+        </div>
         
+
     </section>
     <section>
         <div class="promo text-center">
             <h1>Promoções</h1>
             <h4>Confira nossas promoções</h4>
-            <div class="wrapper">
-                <div class="my-container">
-                    <div class="d-flex justify-content-center gap-2">
+            <div class="wrapper text-start">
+                <div class="my-container text-start">
+                    <div>
                         <i class="fas fa-ticket-alt"></i>
                         <h1>30% OFF</h1>
                     </div>
-                    
+
                     <h2>Guitarras Nacionais</h2>
                 </div>
-                <div class="my-container">
-                    <div class="d-flex justify-content-center gap-2">
+                <div class="my-container text-start">
+
+                    <div>
                         <i class="fas fa-tags"></i>
                         <h1>5% OFF</h1>
                     </div>
                     <h2>Violões Nacionais</h2>
+
                 </div>
-                <div class="my-container">
-                    <div class="d-flex justify-content-center gap-2">
+                <div class="my-container text-start">
+                    <div>
                         <i class="fas fa-tags"></i>
                         <h1>15% OFF</h1>
                     </div>
                     <h2>Acessórios em geral</h2>
                 </div>
-                
+
             </div>
         </div>
-        
+
     </section>
     <section id="contato">
-        
-        <h4>Gostou de algo?</h4>
-        <p>Entre em contato conosco.</p>
-        <div class="contato">
-            <a class="bi bi-telephone" title="Telefone"></a>
-            <a class="bi bi-whatsapp" title="WhatsApp"></a>
-            <a class="bi bi-globe-americas" title="Website"></a>
+
+        <div class="home-data">
+
+            <div class="home-data">
+                <div>
+                    <h4>Gostou de algo?</h4>
+                    <p>Entre em contato conosco.</p>
+                    
+                    <div class="contato">
+                        <a class="bi bi-telephone" title="Telefone"></a>
+                        <a class="bi bi-whatsapp" title="WhatsApp"></a>
+                        <a class="bi bi-globe-americas" title="Website"></a>
+                        <a class="bi bi-geo-alt" title="Localização"></a>
+                    </div>
+                </div>
+                <div class="home-image">
+                    <img src="violao.jpg" alt="">
+                </div>
+            </div>
         </div>
+
     </section>
 </body>
+
 </html>

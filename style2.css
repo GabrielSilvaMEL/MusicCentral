@@ -10,6 +10,7 @@ i{
 }
 section{
     height:100vh;
+
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -37,7 +38,9 @@ section{
     align-items: center;
     align-content: center;
 }
-
+.home-text h1{
+    font-weight: 700;
+}
 .home-data{
     display: flex;
     justify-content: center;
@@ -77,7 +80,7 @@ section{
 }
 .first-class{
     background-color:var(--first-color) ;
-    height: auto;
+    
 }
 .first-class h1,h2{
     color:white ;
@@ -92,7 +95,7 @@ section{
     color:white;
     background-color: var(--first-color);
     border-radius: 1rem;
-    padding: .5rem 2rem;
+    padding: .5rem 1rem;
     box-shadow: 2px 2px 2px 1.5px rgba(0, 0, 0, 0.4);
 }
 .contato a:hover{
@@ -110,7 +113,7 @@ section{
     color:white;
     border-radius: .5rem;
     text-decoration: none;
-    font-weight: 600;
+    font-weight: 400;
 }
 .global-button:hover{
     padding: 1rem;
@@ -133,10 +136,18 @@ section{
     .my-container-first{
         flex: 0 1 60vw;
     }
+    .my-container{
+        flex: 0 1 80vw;
+    }
+    .first-class{
+        height:auto;
+    }
 }
 @media(max-width:500px){
     
-    
+    .my-container{
+        flex: 0 1 80vw;
+    }
     .my-container-first{
         flex: 0 1 80vw;
        
@@ -145,6 +156,9 @@ section{
 @media(min-width:1000px){
     
     .my-container-first{
+        flex: 0 1 15vw;
+    }
+    .my-container{
         flex: 0 1 20vw;
     }
     
