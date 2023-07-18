@@ -14,13 +14,51 @@
     <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
     <script>
         $(document).ready(function () {
-            // Manipula o clique no botão
-            $("#toggleButton").click(function () {
-                $("#conteudo").fadeToggle(1000); // Duração da animação em milissegundos
+            $(window).scroll(function () {
+                var windowHeight = $(window).height();
+                var scrollPos = $(window).scrollTop();
+
+                $(".my-container-first").each(function () {
+                    var elemPos = $(this).offset().top;
+
+                    if (elemPos < scrollPos + windowHeight) {
+                        $(this).css("opacity", 1);
+                    }
+                });
             });
         });
+
+        $(document).ready(function () {
+                $(window).on("scroll", function () {
+                    var scrollPos = $(this).scrollTop();
+
+                    if (scrollPos > 0) {
+                        $(".button-top").fadeIn();
+                    } else {
+                        $(".button-top").fadeOut();
+                    }
+                });
+
+                $(".button-top").on("click", function () {
+                    $("html, body").animate({ scrollTop: 0 }, 800);
+                });
+            });
+
+        window.addEventListener("DOMContentLoaded", function () {
+            var homeText = document.querySelector(".home-text");
+            homeText.style.opacity = 0;
+
+            var fadeInEffect = setInterval(function () {
+                homeText.style.opacity = Number(homeText.style.opacity) + 0.1;
+                if (homeText.style.opacity >= 1) {
+                    clearInterval(fadeInEffect);
+                }
+            }, 100);
+        });
+
 
     </script>
 
@@ -29,11 +67,14 @@
 </head>
 
 <body>
-
+    <div class="button-top">
+        <a href="#home" class="fas fa-arrow-up"></a>
+    </div>
     <section id="home">
         <div class="header-data d-flex gap-3">
             <a href="#home">HOME</a>
-            <a href="#about">SOBRE NÓS</a>
+            <a href="#about">SOBRE</a>
+            <a href="#promo">SALE</a>
             <a href="#contato">CONTATO</a>
         </div>
 
@@ -53,44 +94,44 @@
     </section>
     <section class="first-class" id="about">
 
+
+
         <div class="home-data">
-        
-            <div class="home-data">
-                <div class="d-flex flex-column justify-content-center align-items-center text-center first-class">
-                    <h1>Sobre Nós</h1>
-                    <h2 class="sub-titulo">Estamos há 30 anos proporcionando o melhor dos instrumentos musicais.</h2>
-                
-                    <div class="wrapper">
-                        <div class="my-container-first">
-                            <i class="fas fa-guitar"></i>
-                            <h3>Violões</h3>
-                        </div>
-                        <div class="my-container-first">
-                            <i class="fas fa-drum"></i>
-                            <h3>Baterias</h3>
-                        </div>
-                
-                        <div class="my-container-first">
-                            <i class="fas fa-guitar"></i>
-                            <h3>Guitarras</h3>
-                        </div>
-                
-                        <div class="my-container-first">
-                            <i class="fas fa-guitar"></i>
-                            <h3>Contra-Baixos</h3>
-                        </div>
+            <div class="d-flex flex-column justify-content-center align-items-center text-center first-class">
+                <h1>Sobre Nós</h1>
+                <h2 class="sub-titulo">Estamos há 30 anos proporcionando o melhor dos instrumentos musicais.</h2>
+
+                <div class="wrapper">
+                    <div class="my-container-first">
+                        <i class="fas fa-guitar"></i>
+                        <h3>Violões</h3>
                     </div>
-                
+                    <div class="my-container-first">
+                        <i class="fas fa-drum"></i>
+                        <h3>Baterias</h3>
+                    </div>
+                    <div class="my-container-first">
+                        <i class="fas fa-guitar"></i>
+                        <h3>Guitarras</h3>
+                    </div>
+                    <div class="my-container-first">
+                        <i class="fas fa-guitar"></i>
+                        <h3>Contra-Baixos</h3>
+                    </div>
                 </div>
-                <div class="home-image">
-                    <img src="instrumentos.jpg" alt="">
-                </div>
+
+
+            </div>
+            <div class="home-image">
+                <img src="instrumentos.jpg" alt="">
             </div>
         </div>
-        
+
+
 
     </section>
-    <section>
+    <section class="imagem-secao" id="promo">
+        <div class="imagem-fundo"></div>
         <div class="promo text-center">
             <h1>Promoções</h1>
             <h4>Confira nossas promoções</h4>
@@ -126,25 +167,25 @@
     </section>
     <section id="contato">
 
-        <div class="home-data">
 
-            <div class="home-data">
-                <div>
-                    <h4>Gostou de algo?</h4>
-                    <p>Entre em contato conosco.</p>
-                    
-                    <div class="contato">
-                        <a class="bi bi-telephone" title="Telefone"></a>
-                        <a class="bi bi-whatsapp" title="WhatsApp"></a>
-                        <a class="bi bi-globe-americas" title="Website"></a>
-                        <a class="bi bi-geo-alt" title="Localização"></a>
-                    </div>
-                </div>
-                <div class="home-image">
-                    <img src="violao.jpg" alt="">
+
+        <div class="home-data">
+            <div>
+                <h4>Gostou de algo?</h4>
+                <p>Entre em contato conosco.</p>
+
+                <div class="contato">
+                    <a class="bi bi-telephone" title="Telefone"></a>
+                    <a class="bi bi-whatsapp" title="WhatsApp"></a>
+                    <a class="bi bi-globe-americas" title="Website"></a>
+                    <a class="bi bi-geo-alt" title="Localização"></a>
                 </div>
             </div>
+            <div class="home-image">
+                <img src="violao.jpg" alt="">
+            </div>
         </div>
+
 
     </section>
 </body>
