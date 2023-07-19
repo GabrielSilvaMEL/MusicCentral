@@ -74,13 +74,19 @@ section{
     flex: 0 1 40vw;
     margin: 5px;
     box-shadow: 2px 2px 2px 1.5px rgba(0, 0, 0, 0.4);
-    border-radius: 1rem;
+    border-radius: 3px;
     padding: .75rem;
     text-align: center;
     background-color: white;
     color:black; padding: 2rem;
     opacity: 0;
   transition: opacity 2s ease-in;
+}
+.bi-star{
+    font-size: 1rem;
+}
+.bi-star-fill{
+    font-size: 1rem;
 }
 
 .first-class{

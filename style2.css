@@ -74,7 +74,7 @@ section{
     flex: 0 1 40vw;
     margin: 5px;
     box-shadow: 2px 2px 2px 1.5px rgba(0, 0, 0, 0.4);
-    border-radius: 1rem;
+    
     padding: .75rem;
     text-align: center;
     background-color: white;

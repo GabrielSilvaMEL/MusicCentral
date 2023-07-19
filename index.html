@@ -56,6 +56,11 @@
                         "text-decoration": "none",
                         "color": "white"
                     });
+                    $(".header-data a").hover(function () {
+                        $(this).css("color", "black");
+                    }, function () {
+                        $(this).css("color", "black");
+                    });
                 } else {
                     // Está no topo
                     $(".button-top").fadeOut();
@@ -77,6 +82,11 @@
                         "font-weight": "600",
                         "text-decoration": "none",
                         "color": "black"
+                    });
+                    $(".header-data a").hover(function () {
+                        $(this).css("color", "var(--first-color)");
+                    }, function () {
+                        $(this).css("color", "black");
                     });
                 }
             });
