@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
         integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
-    
+
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
@@ -56,6 +56,11 @@
                         "text-decoration": "none",
                         "color": "white"
                     });
+                    $(".header-data a").hover(function () {
+                        $(this).css("color", "black");
+                    }, function () {
+                        $(this).css("color", "black");
+                    });
                 } else {
                     // Está no topo
                     $(".button-top").fadeOut();
@@ -77,6 +82,11 @@
                         "font-weight": "600",
                         "text-decoration": "none",
                         "color": "black"
+                    });
+                    $(".header-data a").hover(function () {
+                        $(this).css("color", "var(--first-color)");
+                    }, function () {
+                        $(this).css("color", "black");
                     });
                 }
             });
@@ -129,8 +139,6 @@
     <section class="first-class" id="about">
         <div class="home-data">
             <div class="d-flex flex-column justify-content-center align-items-center text-center first-class">
-                <h1>Sobre Nós</h1>
-                <h2 class="sub-titulo">Estamos há 30 anos proporcionando o melhor dos instrumentos musicais.</h2>
 
                 <div class="wrapper">
                     <div class="my-container-first">
@@ -150,14 +158,16 @@
                         <h3>Contra-Baixos</h3>
                     </div>
                 </div>
-
-
             </div>
-            <div class="home-image">
-                <img src="img/instrumentos.jpg" alt="">
+
+            <div class="about-data d-flex justify-content-center  align-content-center flex-column text-start">
+                <h4>Sobre Nós</h4>
+                <p>Estamos há 30 anos proporcionando o melhor dos instrumentos musicais.</p>
+                <p>Nossa missão é oferecer uma experiência excepcional aos amantes da música, fornecendo uma ampla seleção de instrumentos
+                musicais de alta qualidade, equipamentos de áudio e acessórios.</p>
             </div>
+
         </div>
-
     </section>
     <section class="imagem-secao" id="reviews">
         <div class="imagem-fundo"></div>

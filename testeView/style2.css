@@ -52,6 +52,13 @@ section{
     gap:2rem;
     padding: 2rem;
 }
+.about-data{
+    background-color: white;
+    color:black !important;
+    max-width: 40vw;
+    padding: 1rem;
+    height: 40vh;
+}
 .wrapper{
     display: flex;
     flex-wrap: wrap;
@@ -91,9 +98,8 @@ section{
 
 .first-class{
     background-color:var(--first-color) ;
-    
 }
-.first-class h1,h2{
+.white{
     color:white ;
 }
 .imagem-secao {
@@ -193,6 +199,10 @@ section{
     .first-class{
         height:auto;
     }
+    .about-data{
+    background-color: white;
+    color:black !important;
+    max-width: 90vw;}
     
 }
 @media(max-width:500px){
