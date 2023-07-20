@@ -124,6 +124,10 @@ section{
   z-index: -1;
     
 }
+.aulas-style{
+    box-shadow: 2px 2px 2px 1.5px rgba(0, 0, 0, 0.4);
+    border-radius: 3px;
+}
 .promo h1{
     color:white;
 }
@@ -186,6 +190,12 @@ section{
 .button-top:hover{
     background-color: hsl(285, 85%, 32%);;
 }
+.color-gray{
+    color: hsl(0, 0%, 35%);
+}
+.color-first{
+    color: var(--first-color);
+}
 @media(max-width:700px){
     
     .home-data{
@@ -222,6 +232,17 @@ section{
         flex: 0 1 80vw;
        
     }
+}
+@media(max-width:1000px){
+    h1{
+        font-size:1.7rem;
+    }
+    p{
+        font-size: 1.5rem;
+    }
+    #aulas{
+    height: auto;
+}
 }
 @media(min-width:1700px){
     h1{
