@@ -11,7 +11,6 @@
 
     <!-- Bootstrap -->
     <link rel="stylesheet" href="bootstrap.min.css">
-    <link rel="stylesheet" href="bootstrap-utilities.min.css">
     <link rel="stylesheet" href="bootstrap-icons-1.10.5/font/bootstrap-icons.css">
 
     <!-- JQuery -->
@@ -108,6 +107,8 @@
                 }
             }, 100);
         });
+
+        
     </script>
 </head>
 
@@ -119,8 +120,9 @@
         <div class="header-data d-flex gap-3">
             <a href="#home">HOME</a>
             <a href="#about">SOBRE</a>
+            <a href="#planos">PLANOS</a>
             <a href="#reviews">REVIEWS</a>
-            <a href="#contato">CONTATO</a>
+
         </div>
 
 
@@ -137,28 +139,25 @@
         </div>
 
     </section>
-    <section class="first-class" id="about">
-        <div class="container text-center">
-            <h1 class="title-white">Sobre nós</h1>
-            <div class="row justify-content-center">
-                <div class="col-md-6 d-flex justify-content-center flex-column text-start p-5">
-                    <h1 class="title-white">Os melhores instrumentos</h1>
-                    <p class="p-white">Estamos há 30 anos proporcionando o melhor dos instrumentos musicais.</p>
-                    <p class="p-white">Nossa missão é oferecer uma experiência excepcional aos amantes da música.
-                        Buscamos oferecer produtos de marcas renomadas, orientação especializada e excelente
-                        atendimento.</p>
-                </div>
-                <div class="col-md-6 d-flex justify-content-center flex-column text-center p-5">
-                    
-                        <img src="img/violao.jpg" alt="">
-                    
-                </div>
+    <section class="container text-center" id="about">
+
+        <h1 class="title-white">Sobre nós</h1>
+        <div class="row justify-content-center">
+            <div class="col-md-6 d-flex justify-content-center flex-column text-start  p-5">
+                <h1 class="title-white">Os melhores instrumentos pelos menores preços</h1>
+                <p class="p-white">Estamos há 30 anos proporcionando o melhor dos instrumentos musicais.</p>
+                
+            </div>
+            <div class="col-md-6 d-flex justify-content-center flex-column text-center p-5">
+
+                <img src="img/violao.jpg" alt="" class="img-fluid">
+
             </div>
         </div>
     </section>
-    <section class="container" id="aulas">
+    <section class="container" id="planos">
         <h1>Compre nossos planos</h1>
-        <p>Oferecemos planos de fidelidade para usuários com benefícios exclusivos.</p>
+        <p>Para os músicos fieis, oferecemos benefícios extras.</p>
         <div class="row justify-content-center">
             <div class="col-md-4 d-flex justify-content-center flex-column text-center aulas-style p-5">
                 <h2>Básico</h2>
@@ -168,11 +167,12 @@
                     <a class="global-button p-3 ">Ver mais</a>
                 </div>
                 <div class="text-start">
-                    <i class="bi bi-check"></i>Descontos exclusivos
-                </div>
-                <div class="text-start">
                     <i class="bi bi-check"></i>Presentes da loja
                 </div>
+                <div class="text-start">
+                    <i class="bi bi-check"></i>Descontos exclusivos
+                </div>
+
                 <div class="text-start">
                     <i class="bi bi-x"></i>Aulas de música
                 </div>
@@ -189,11 +189,12 @@
                     <a class="global-button p-3 ">Ver mais</a>
                 </div>
                 <div class="text-start">
-                    <i class="bi bi-check"></i>Descontos exclusivos
-                </div>
-                <div class="text-start">
                     <i class="bi bi-check"></i>Presentes da loja
                 </div>
+                <div class="text-start">
+                    <i class="bi bi-check"></i>Descontos exclusivos
+                </div>
+
                 <div class="text-start">
                     <i class="bi bi-check"></i>Aulas de música
                 </div>
@@ -210,11 +211,12 @@
                     <a class="global-button p-3 ">Ver mais</a>
                 </div>
                 <div class="text-start">
-                    <i class="bi bi-check"></i>Descontos exclusivos
-                </div>
-                <div class="text-start">
                     <i class="bi bi-check"></i>Presentes da loja
                 </div>
+                <div class="text-start">
+                    <i class="bi bi-check"></i>Descontos exclusivos
+                </div>
+
                 <div class="text-start">
                     <i class="bi bi-check"></i>Aulas de música
                 </div>
@@ -265,7 +267,8 @@
         </div>
 
     </section>
-    <section id="contato">
+
+    <div id="contato">
         <div class="home-data">
             <div>
                 <h4>Gostou de algo?</h4>
@@ -278,9 +281,9 @@
                     <a class="bi bi-geo-alt" title="Localização"></a>
                 </div>
             </div>
-            
         </div>
-    </section>
+    </div>
+
 </body>
 
 </html>
