@@ -62,9 +62,7 @@ section {
     gap: 2rem;
     padding: 2rem;
 }
-.background-color-first {
-    background-color: var(--first-color);
-}
+
 
 .title-white {
     color: white;
@@ -110,13 +108,7 @@ section {
     font-size: 1rem;
 }
 
-.first-class {
-    background-color: var(--first-color);
-}
 
-.white {
-    color: white;
-}
 
 .imagem-secao {
     position: relative;
