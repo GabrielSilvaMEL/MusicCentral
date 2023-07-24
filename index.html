@@ -1,27 +1,29 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Front-end</title>
-    <link rel="stylesheet" href="style2.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
-        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
-    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
 
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Style -->
+    <link rel="stylesheet" href="style2.css">
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="bootstrap-icons-1.10.5/font/bootstrap-icons.css">
+
+    <!-- JQuery -->
+    <script src="jquery3.7.0.js"></script>
+
 
     <script>
-        $(document).ready(function () {
-            $(window).scroll(function () {
+        $(document).ready(function() {
+            $(window).scroll(function() {
                 var windowHeight = $(window).height();
                 var scrollPos = $(window).scrollTop();
 
-                $(".my-container-first").each(function () {
+                $(".my-container-first").each(function() {
                     var elemPos = $(this).offset().top;
 
                     if (elemPos < scrollPos + windowHeight) {
@@ -31,8 +33,8 @@
             });
         });
 
-        $(document).ready(function () {
-            $(window).on("scroll", function () {
+        $(document).ready(function() {
+            $(window).on("scroll", function() {
                 var scrollPos = $(this).scrollTop();
 
                 if (scrollPos > 0) {
@@ -56,16 +58,16 @@
                         "text-decoration": "none",
                         "color": "white"
                     });
-                    $(".header-data a").hover(function () {
+                    $(".header-data a").hover(function() {
                         $(this).css("color", "black");
-                    }, function () {
+                    }, function() {
                         $(this).css("color", "black");
                     });
                 } else {
                     // Está no topo
                     $(".button-top").fadeOut();
                     $(".header-data").css({
-                        "position":" absolute",
+                        "position": " absolute",
                         "top": "2%",
                         "height": "",
                         "top": "",
@@ -83,9 +85,9 @@
                         "text-decoration": "none",
                         "color": "black"
                     });
-                    $(".header-data a").hover(function () {
+                    $(".header-data a").hover(function() {
                         $(this).css("color", "var(--first-color)");
-                    }, function () {
+                    }, function() {
                         $(this).css("color", "black");
                     });
                 }
@@ -94,11 +96,11 @@
 
         });
 
-        window.addEventListener("DOMContentLoaded", function () {
+        window.addEventListener("DOMContentLoaded", function() {
             var homeText = document.querySelector(".home-text");
             homeText.style.opacity = 0;
 
-            var fadeInEffect = setInterval(function () {
+            var fadeInEffect = setInterval(function() {
                 homeText.style.opacity = Number(homeText.style.opacity) + 0.1;
                 if (homeText.style.opacity >= 1) {
                     clearInterval(fadeInEffect);
@@ -106,26 +108,27 @@
             }, 100);
         });
 
-
+        
     </script>
 </head>
 
 <body>
     <!-- botao fixo go to top -->
-    <a href="#home" class="button-top fas fa-arrow-up"></a>
+    <a href="#home" class="button-top bi bi-arrow-up"></a>
 
     <section id="home">
         <div class="header-data d-flex gap-3">
             <a href="#home">HOME</a>
             <a href="#about">SOBRE</a>
-            <a href="#promo">SALE</a>
-            <a href="#contato">CONTATO</a>
+            <a href="#planos">PLANOS</a>
+            <a href="#reviews">REVIEWS</a>
+
         </div>
 
 
         <div class="home-data">
             <div class="home-image">
-                <img src="music.jpg" alt="">
+                <img src="img/music.jpg" alt="">
             </div>
             <div class="home-text">
                 <h1>Olá!</h1>
@@ -136,78 +139,136 @@
         </div>
 
     </section>
-    <section class="first-class" id="about">
-        <div class="home-data">
-            <div class="d-flex flex-column justify-content-center align-items-center text-center first-class">
-                <h1>Sobre Nós</h1>
-                <h2 class="sub-titulo">Estamos há 30 anos proporcionando o melhor dos instrumentos musicais.</h2>
+    <section class="container text-center" id="about">
 
-                <div class="wrapper">
-                    <div class="my-container-first">
-                        <i class="fas fa-guitar"></i>
-                        <h3>Violões</h3>
-                    </div>
-                    <div class="my-container-first">
-                        <i class="fas fa-drum"></i>
-                        <h3>Baterias</h3>
-                    </div>
-                    <div class="my-container-first">
-                        <i class="fas fa-guitar"></i>
-                        <h3>Guitarras</h3>
-                    </div>
-                    <div class="my-container-first">
-                        <i class="fas fa-guitar"></i>
-                        <h3>Contra-Baixos</h3>
-                    </div>
-                </div>
-
-
+        <h1 class="title-white">Sobre nós</h1>
+        <div class="row justify-content-center">
+            <div class="col-md-6 d-flex justify-content-center flex-column text-start  p-5">
+                <h1 class="title-white">Os melhores instrumentos pelos menores preços</h1>
+                <p class="p-white">Estamos há 30 anos proporcionando o melhor dos instrumentos musicais.</p>
+                
             </div>
-            <div class="home-image">
-                <img src="instrumentos.jpg" alt="">
+            <div class="col-md-6 d-flex justify-content-center flex-column text-center p-5">
+
+                <img src="img/violao.jpg" alt="" class="img-fluid">
+
             </div>
         </div>
-
     </section>
-    <section class="imagem-secao" id="promo">
+    <section class="container" id="planos">
+        <h1>Compre nossos planos</h1>
+        <p>Para os músicos fieis, oferecemos benefícios extras.</p>
+        <div class="row justify-content-center">
+            <div class="col-md-4 d-flex justify-content-center flex-column text-center aulas-style p-5">
+                <h2>Básico</h2>
+                <p class="color-gray">+Descontos</p>
+                <h1>R$10/mês</h1>
+                <div class="m-3">
+                    <a class="global-button p-3 ">Ver mais</a>
+                </div>
+                <div class="text-start">
+                    <i class="bi bi-check"></i>Presentes da loja
+                </div>
+                <div class="text-start">
+                    <i class="bi bi-check"></i>Descontos exclusivos
+                </div>
+
+                <div class="text-start">
+                    <i class="bi bi-x"></i>Aulas de música
+                </div>
+                <div class="text-start">
+                    <i class="bi bi-x"></i>Consultoria
+                </div>
+
+            </div>
+            <div class="col-md-4 d-flex justify-content-center flex-column text-center aulas-style p-5">
+                <h2>Profissional</h2>
+                <p class="color-gray">Aulas de música</p>
+                <h1>R$20/mês</h1>
+                <div class="m-3">
+                    <a class="global-button p-3 ">Ver mais</a>
+                </div>
+                <div class="text-start">
+                    <i class="bi bi-check"></i>Presentes da loja
+                </div>
+                <div class="text-start">
+                    <i class="bi bi-check"></i>Descontos exclusivos
+                </div>
+
+                <div class="text-start">
+                    <i class="bi bi-check"></i>Aulas de música
+                </div>
+                <div class="text-start">
+                    <i class="bi bi-x"></i>Consultoria
+                </div>
+
+            </div>
+            <div class="col-md-4 d-flex justify-content-center flex-column text-center aulas-style p-5">
+                <h2 class="color-first">Premium</h2>
+                <p class="color-gray">Tudo o que há</p>
+                <h1 class="color-first">R$40/mês</h1>
+                <div class="m-3">
+                    <a class="global-button p-3 ">Ver mais</a>
+                </div>
+                <div class="text-start">
+                    <i class="bi bi-check"></i>Presentes da loja
+                </div>
+                <div class="text-start">
+                    <i class="bi bi-check"></i>Descontos exclusivos
+                </div>
+
+                <div class="text-start">
+                    <i class="bi bi-check"></i>Aulas de música
+                </div>
+                <div class="text-start">
+                    <i class="bi bi-check"></i>Consultoria
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+    <section class="imagem-secao" id="reviews">
         <div class="imagem-fundo"></div>
         <div class="promo text-center">
-            <h1>Promoções</h1>
-            <h4>Confira nossas promoções</h4>
+            <h1>Avaliações</h1>
+            <h4>Avaliações de clientes anteriores</h4>
             <div class="wrapper text-start">
-                <div class="my-container text-start">
+                <div class="my-container-first text-start d-flex align-items-center gap-3">
+                    <i class="bi bi-person"></i>
                     <div>
-                        <i class="fas fa-ticket-alt"></i>
-                        <h1>30% OFF</h1>
+                        <h2>Maria Silva</h2>
+                        <p>Muito satisfeita com minha bateria nova.</p>
+                        <div><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                class="bi bi-star-fill"></i></div>
                     </div>
-
-                    <h2>Guitarras Nacionais</h2>
                 </div>
-                <div class="my-container text-start">
-
+                <div class="my-container-first text-start d-flex align-items-center gap-3">
+                    <i class="bi bi-person"></i>
                     <div>
-                        <i class="fas fa-tags"></i>
-                        <h1>5% OFF</h1>
+                        <h2>Guilherme Pedro</h2>
+                        <p>Meu contra-baixo novo é ótimo.</p>
+                        <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                            class="bi bi-star-fill"></i><i class="bi bi-star"></i>
                     </div>
-                    <h2>Violões Nacionais</h2>
-
                 </div>
-                <div class="my-container text-start">
+                <div class="my-container-first text-start d-flex align-items-center gap-3">
+                    <i class="bi bi-person"></i>
                     <div>
-                        <i class="fas fa-tags"></i>
-                        <h1>15% OFF</h1>
+                        <h2>Luíza Maria</h2>
+                        <p>Adoreii!!</p>
+                        <div><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                class="bi bi-star-fill"></i></div>
                     </div>
-                    <h2>Acessórios em geral</h2>
                 </div>
-
             </div>
         </div>
 
     </section>
-    <section id="contato">
 
-
-
+    <div id="contato">
         <div class="home-data">
             <div>
                 <h4>Gostou de algo?</h4>
@@ -220,13 +281,9 @@
                     <a class="bi bi-geo-alt" title="Localização"></a>
                 </div>
             </div>
-            <div class="home-image">
-                <img src="violao.jpg" alt="">
-            </div>
         </div>
+    </div>
 
-
-    </section>
 </body>
 
 </html>

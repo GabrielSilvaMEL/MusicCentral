@@ -1,16 +1,22 @@
-:root{
-    --first-color:hsl(285, 85%, 46%);
+:root {
+    --first-color: hsl(285, 85%, 46%);
 }
-img{
+
+img {
     max-width: 50vw;
     border-radius: 1rem;
 }
-i{
+
+i {
     font-size: 2rem;
 }
-section{
-    height:100vh;
 
+#about{
+    background: var(--first-color);
+    height: auto;
+}
+section {
+    height: 100vh;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -18,81 +24,95 @@ section{
     align-content: center;
 }
 
-.header-data{
+.header-data {
     position: absolute;
-    top:2%;
-    
+    top: 2%;
+
 }
-.header-data a{
+
+.header-data a {
     font-weight: 600;
     text-decoration: none;
     color: black;
 }
-.header-data a:hover{
+
+.header-data a:hover {
     color: var(--first-color);
 }
 
-.home{
-    padding:1rem;
+.home {
+    padding: 1rem;
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
     align-content: center;
 }
-.home-text h1{
+
+.home-text h1 {
     font-weight: 700;
 }
-.home-data{
+
+.home-data {
     display: flex;
     justify-content: center;
     flex-direction: row;
     align-items: center;
     align-content: center;
-    gap:2rem;
+    gap: 2rem;
     padding: 2rem;
 }
-.wrapper{
+
+
+.title-white {
+    color: white;
+    font-weight: 700;
+}
+
+.p-white {
+    color: white;
+    font-weight: 500;
+}
+
+.wrapper {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    
+
     margin: 2rem;
 }
-.my-container{
-    flex: 0 1 40vw;
-    background-color: var(--first-color);
-    margin: 5px;
-    box-shadow: 2px 2px 2px 1.5px rgba(0, 0, 0, 0.4);
-    border-radius: 1rem;
-    padding: .75rem;
-    text-align: center;
-    color: white;
-    padding: 1rem;
-}
-.my-container-first{
+
+.my-container-first {
     flex: 0 1 40vw;
     margin: 5px;
     box-shadow: 2px 2px 2px 1.5px rgba(0, 0, 0, 0.4);
-    
+    border-radius: 3px;
     padding: .75rem;
     text-align: center;
     background-color: white;
-    color:black; padding: 2rem;
+    color: black;
+    padding: 2rem;
     opacity: 0;
-  transition: opacity 2s ease-in;
+    transition: opacity 2s ease-in;
 }
 
-.first-class{
-    background-color:var(--first-color) ;
-    
+.my-container-first:hover {
+    background-color: rgb(240, 240, 240);
 }
-.first-class h1,h2{
-    color:white ;
+
+.bi-star {
+    font-size: 1rem;
 }
+
+.bi-star-fill {
+    font-size: 1rem;
+}
+
+
+
 .imagem-secao {
-  position: relative;
-     background: linear-gradient(90deg, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.4) 50%, rgba(0,0,0,1) 100%);
+    position: relative;
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.4) 50%, rgba(0, 0, 0, 1) 100%);
 }
 
 .imagem-fundo {
@@ -101,75 +121,90 @@ section{
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url("loja.jpg");
+  background-image: url("img/loja.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   z-index: -1;
     
 }
-.promo h1{
-    color:white;
-}
-.promo h4{
-    color:white;
+.aulas-style{
+    box-shadow: 2px 2px 2px 1.5px rgba(0, 0, 0, 0.4);
+    border-radius: 3px;
 }
 
-.contato{
-    text-decoration:none;
-
+.promo h1 {
+    color: white;
 }
-.contato a{
+
+.promo h4 {
+    color: white;
+}
+
+.contato {
+    text-decoration: none;
+    
+}
+
+.contato a {
     font-size: 1.7rem;
     text-decoration: none;
-    color:white;
+    color: white;
     background-color: var(--first-color);
     border-radius: 1rem;
     padding: .5rem 1rem;
+    
     box-shadow: 2px 2px 2px 1.5px rgba(0, 0, 0, 0.4);
 }
-.contato a:hover{
-    
-    color:white;
+
+.contato a:hover {
+
+    color: white;
     background-color: hsl(285, 86%, 36%);
-   
+
 }
-.sub-titulo{
-    color:lightgray
-}
-.global-button{
+.global-button {
     padding: 1rem;
     background-color: var(--first-color);
-    color:white;
+    color: white;
     border-radius: .5rem;
     text-decoration: none;
     font-weight: 400;
 }
-.global-button:hover{
+
+.global-button:hover {
     padding: 1rem;
     background-color: hsl(285, 85%, 32%);
-    color:white;
-    
+    color: white;
+
 }
-.global-button i{
+
+.global-button i {
     font-size: 1.3rem;
 }
 
-.button-top{
-    position:fixed;
-    bottom:3%;
-    right:3%;
+.button-top {
+    position: fixed;
+    bottom: 3%;
+    right: 3%;
     padding: 1rem;
     border: 3px solid white;
     border-radius: 1rem;
-    color:white;
+    color: white;
     background-color: var(--first-color);
     z-index: 10;
     text-decoration: none;
     font-size: 1.5rem;
 }
-
-
+.button-top:hover{
+    background-color: hsl(285, 85%, 32%);;
+}
+.color-gray{
+    color: hsl(0, 0%, 35%);
+}
+.color-first{
+    color: var(--first-color);
+}
 @media(max-width:700px){
     
     .home-data{
@@ -187,25 +222,94 @@ section{
     .first-class{
         height:auto;
     }
-    
+    .about-data{
+    background-color: white;
+    color:black !important;
+    max-width: 90vw;
+    padding: 1rem;
+    max-height: auto;
+    }
+    #reviews {
+        height: auto;
+    }
+    #about{
+        height: auto;
+    }
+
 }
-@media(max-width:500px){
+
+
+@media(max-width:1000px){
+    h1{
+        font-size:1.7rem;
+    }
+    p{
+        font-size: 1.5rem;
+    }
+    #planos{
+    height: auto;
+}
+}
+@media(min-width:1700px){
+    h1{
+        font-size:1.7rem;
+    }}
+@media(max-width:700px) {
+
+    .home-data {
+        flex-direction: column;
+    }
     
-    .my-container{
+    img {
+        max-width: 80vw;
+    }
+
+    .my-container-first {
+        flex: 0 1 60vw;
+    }
+
+    .my-container {
         flex: 0 1 80vw;
     }
-    .my-container-first{
+
+    .first-class {
+        height: auto;
+    }
+
+    .about-data {
+
+
+        max-width: 90vw;
+        padding: 1rem;
+        max-height: auto;
+    }
+
+
+}
+
+@media(max-width:500px) {
+
+    .my-container-first {
         flex: 0 1 80vw;
-       
+
     }
 }
-@media(min-width:1000px){
-    
-    .my-container-first{
+
+@media(min-width:1700px) {
+    h1 {
+        font-size: 1.7rem;
+    }
+
+    p {
+        font-size: 1.5rem;
+    }
+}
+
+@media(min-width:1000px) {
+
+    .my-container-first {
         flex: 0 1 20vw;
     }
-    .my-container{
-        flex: 0 1 20vw;
-    }
-    
+
+
 }
