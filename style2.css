@@ -11,10 +11,7 @@ i {
     font-size: 2rem;
 }
 
-#about{
-    background: var(--first-color);
-    height: auto;
-}
+
 section {
     height: 100vh;
     display: flex;
@@ -29,11 +26,13 @@ section {
     top: 2%;
 
 }
+#home{
 
+}
 .header-data a {
     font-weight: 600;
     text-decoration: none;
-    color: black;
+    color: white;
 }
 
 .header-data a:hover {
@@ -48,9 +47,14 @@ section {
     align-items: center;
     align-content: center;
 }
-
+.home-text{
+    color:white
+}
 .home-text h1 {
     font-weight: 700;
+}
+.home-image{
+    visibility:hidden;
 }
 
 .home-data {
@@ -62,7 +66,6 @@ section {
     gap: 2rem;
     padding: 2rem;
 }
-
 
 .title-white {
     color: white;
@@ -108,8 +111,6 @@ section {
     font-size: 1rem;
 }
 
-
-
 .imagem-secao {
     position: relative;
     background: linear-gradient(90deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.4) 50%, rgba(0, 0, 0, 1) 100%);
@@ -125,8 +126,19 @@ section {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  z-index: -1;
-    
+  z-index: -1;  
+}
+.imagem-fundo-2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("img/musicstore.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: -1;  
 }
 .aulas-style{
     box-shadow: 2px 2px 2px 1.5px rgba(0, 0, 0, 0.4);
